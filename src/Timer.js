@@ -18,13 +18,7 @@ export default class Timer extends Component {
       TimerEnded: props.TimerEnded,
     };
   }
-  /*
-  componentDidMount() {
-    if (this.autostart === true) {
-      this.startTimer();
-    }
-  }
-*/
+
   componentDidMount() {
     const { autostart } = this.state;
     if (autostart === true) {
